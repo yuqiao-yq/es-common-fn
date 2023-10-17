@@ -11,6 +11,16 @@ const esCommonFn = require('es-common-fn')
 ```
 ## 格式相关
 
+### 首字母大写
+```javascript
+const res = esCommonFn.capitalize('str')
+```
+
+### 驼峰转下划线
+```javascript
+const res = esCommonFn.hump2Line('strExample')
+```
+
 ### 格式化金钱
 ```javascript
 // 格式化金钱，每千分位加逗号
