@@ -37,9 +37,17 @@ const hasChildrenEle = (e) => {
   return false
 }
 
+// 带参数跳转到对应页面并打开新窗口
+const openNewWindow = (routerName, query) => {
+  const routeData = Router.resolve({ name: routerName, query: query });
+  const winRef = window.open("url", '_blank');
+  winRef.location = routeData.href;
+}
+
 module.exports = {
   isBrowser,
   getMobileType,
   getStyle,
   hasChildrenEle,
+  openNewWindow,
 }

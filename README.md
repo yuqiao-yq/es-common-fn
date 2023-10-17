@@ -50,3 +50,8 @@ esCommonFn.getStyle(elem, prop)
 ```javascript
 esCommonFn.hasChildrenEle(elem)
 ```
+
+### 带参数跳转到对应页面并打开新窗口
+```javascript
+esCommonFn.openNewWindow(routerName, query)
+```
