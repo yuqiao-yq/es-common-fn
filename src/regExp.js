@@ -24,9 +24,15 @@ const IsEmail = (str) => {
   return reg.test(str)
 }
 
+// 替换特殊字符为自定义字符，默认为空
+const speCharRep = (str, rep='') => {
+  return str.replace(/[^\w\u4E00-\u9FA5]/g, rep)
+}
+
 module.exports = {
   isDecimal,
   isChineseText,
   isPhoneNum,
   IsEmail,
+  speCharRep,
 }

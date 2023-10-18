@@ -11,6 +11,6 @@ const esCommonFn = require("./index.js")
 //   ],
 //   'value'
 // )
-const res = esCommonFn.IsEmail("123456@gmail.com")
+const res = esCommonFn.speCharRep("@12#", 'A')
     
     console.log(res)

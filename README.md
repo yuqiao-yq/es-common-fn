@@ -123,3 +123,7 @@ esCommonFn.isPhoneNum('13912345678') // true
 esCommonFn.IsEmail('123456@gmail.com') // true
 ```
 
+### 替换特殊字符为自定义字符，默认为空
+```javascript
+const res = esCommonFn.speCharRep("@12#", 'A') // A12A
+```
