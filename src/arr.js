@@ -11,6 +11,15 @@ const DeduplicateArr2 = (arr) => {
   return res
 }
 
+// 根据数组某个属性去重
+const uniqueBy = (arr, prop) => {
+  const res = new Map()
+  return arr.filter(
+    (item) => !res.has(item[prop]) && res.set(item[prop], 1)
+  )
+}
+
 module.exports = {
   DeduplicateArr2,
+  uniqueBy,
 }
