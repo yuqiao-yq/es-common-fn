@@ -98,3 +98,26 @@ esCommonFn.debounce(fn, delay)
 ```javascript
 esCommonFn.throttle(fn, delay)
 ```
+
+## 正则表达式
+
+### 是否带有小数
+```javascript
+esCommonFn.isDecimal('12.1') // true
+```
+
+### 校验是否中文名称组成
+```javascript
+esCommonFn.isChineseText('你好') // true
+```
+
+### 校验电话码格式
+```javascript
+esCommonFn.isPhoneNum('13912345678') // true
+```
+
+### 校验邮件地址是否合法
+```javascript
+esCommonFn.IsEmail('123456@gmail.com') // true
+```
+
