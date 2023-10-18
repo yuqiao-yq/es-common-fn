@@ -42,7 +42,11 @@ const res = esCommonFn.moneyThousands("1234567")
 
 ### 二维数组去重
 ```javascript
-const res = esCommonFn.DeduplicateArr2([[1,2],[3,4]]) // [1,2,3,4]
+const res = esCommonFn.DeduplicateArr2([[1,2],[1,2]]) // [1,2]
+```
+### 根据数组某个属性去重
+```javascript
+const res = esCommonFn.uniqueBy(arr, propName)
 ```
 
 ## 对象相关
@@ -50,6 +54,10 @@ const res = esCommonFn.DeduplicateArr2([[1,2],[3,4]]) // [1,2,3,4]
 ### 判断对象是否为空
 ```javascript
 const res = esCommonFn.isEmptyObj(obj) // true / false
+```
+### 深拷贝
+```javascript
+const res = esCommonFn.deepCopy(obj)
 ```
 
 ## 浏览器相关
