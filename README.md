@@ -16,6 +16,16 @@ const esCommonFn = require('es-common-fn')
 const res = esCommonFn.capitalize('str')
 ```
 
+### 单个单词首字母大写
+```javascript
+const res = esCommonFn.capitalizeEveryWord('hello world!'); // 'Hello World!'
+```
+
+### 删除字符串中的 HTMl 标签
+```javascript
+const res = esCommonFn.stripHTMLTags('<p><em>Hello</em> <strong>World</strong></p>'); // 'Hello World!'
+```
+
 ### 驼峰转下划线
 ```javascript
 const res = esCommonFn.hump2Line('strExample')
@@ -28,6 +38,19 @@ const res = esCommonFn.moneyThousands("1234567")
 // res='1,234,567'
 ```
 
+## 数组相关
+
+### 二维数组去重
+```javascript
+const res = esCommonFn.DeduplicateArr2([[1,2],[3,4]]) // [1,2,3,4]
+```
+
+## 对象相关
+
+### 判断对象是否为空
+```javascript
+const res = esCommonFn.isEmptyObj(obj) // true / false
+```
 
 ## 浏览器相关
 
