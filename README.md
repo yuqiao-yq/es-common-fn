@@ -8,6 +8,8 @@ npm install es-common-fn
 
 ```js
 const esCommonFn = require('es-common-fn')
+or
+import esCommonFn from 'es-common-fn'
 ```
 ## 格式相关
 
