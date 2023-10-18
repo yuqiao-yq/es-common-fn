@@ -86,3 +86,15 @@ esCommonFn.hasChildrenEle(elem)
 ```javascript
 esCommonFn.openNewWindow(routerName, query)
 ```
+
+## 函数相关
+
+### 防抖
+```javascript
+esCommonFn.debounce(fn, delay)
+```
+
+### 节流
+```javascript
+esCommonFn.throttle(fn, delay)
+```
