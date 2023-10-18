@@ -3,6 +3,7 @@ const browser = require("./src/browser")
 const strFormat = require("./src/strFormat")
 const obj = require("./src/obj")
 const arr = require("./src/arr")
+const commonFn = require("./src/commonFn")
 
 module.exports = {
   ...money,
@@ -10,4 +11,5 @@ module.exports = {
   ...strFormat,
   ...obj,
   ...arr,
+  ...commonFn,
 }
