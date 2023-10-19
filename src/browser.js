@@ -5,6 +5,21 @@ const isBrowser = () => ![typeof window, typeof document].includes("undefined")
 // isBrowser(); // true (browser)
 // isBrowser(); // false (Node)
 
+// 检查浏览器联网状态
+const isBrowserOnline = () => {
+  return window.navigator.onLine
+}
+// 监听浏览器联网状态
+const watchOnlineStatus = (onlineFn, offlineFn) => {
+  window.addEventListener("online", onlineFn)
+  window.addEventListener("offline", offlineFn)
+}
+// 移除浏览器联网状态
+const removeOnlineStatus = (onlineFn, offlineFn) => {
+  window.removeEventListener("online", onlineFn)
+  window.removeEventListener("offline", offlineFn)
+}
+
 // 判断手机类型
 const getMobileType = () => {
   let u = navigator.userAgent
@@ -50,4 +65,7 @@ module.exports = {
   getStyle,
   hasChildrenEle,
   openNewWindow,
+  isBrowserOnline,
+  watchOnlineStatus,
+  removeOnlineStatus,
 }

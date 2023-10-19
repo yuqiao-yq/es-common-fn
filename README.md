@@ -68,6 +68,21 @@ const res = esCommonFn.deepCopy(obj)
 ```js
 esCommonFn.isBrowser(); // true (browser) / false (Node)
 ```
+### 检查浏览器联网状态
+```js
+esCommonFn.isBrowserOnline(); // true / false
+```
+
+### 监听&移除浏览器联网状态
+```js
+// 定义联网和断网时执行的函数
+const onlineFn = () => {}
+const offlineFn = () => {}
+// 添加监听
+esCommonFn.watchOnlineStatus(onlineFn, offlineFn)
+// 移除监听
+esCommonFn.removeOnlineStatus(onlineFn, offlineFn)
+```
 
 ### 判断手机类型
 ```javascript
