@@ -50,6 +50,11 @@ const res = esCommonFn.DeduplicateArr2([[1,2],[1,2]]) // [1,2]
 ```javascript
 const res = esCommonFn.uniqueBy(arr, propName)
 ```
+### 全排列
+```javascript
+const res = esCommonFn.getFullPerm([1,2,3]) // 省略第二个参数默认从index为0开始全排列 [[ 1, 2, 3 ],[ 1, 3, 2 ],[ 2, 1, 3 ],[ 2, 3, 1 ],[ 3, 2, 1 ],[ 3, 1, 2 ]]
+const res = esCommonFn.getFullPerm([1,2,3],1) // [ [ 1, 2, 3 ], [ 1, 3, 2 ] ]
+```
 
 ## 对象相关
 

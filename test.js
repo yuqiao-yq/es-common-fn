@@ -11,6 +11,6 @@ const esCommonFn = require("./index.js")
 //   ],
 //   'value'
 // )
-const res = esCommonFn.speCharRep("@12#", 'A')
+const res = esCommonFn.getFullPerm([1,2,3],1)
     
     console.log(res)
