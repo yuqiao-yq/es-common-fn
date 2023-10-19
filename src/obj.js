@@ -10,7 +10,7 @@ const isEmptyObj = (obj) => {
 const deepCopy = (newObj, oldObj) => {
   newObj = newObj || {}
   for (let i in oldObj) {
-    if (oldObj.hasOwnProperty(i)) {
+    if (Object.prototype.hasOwnProperty.call(oldObj, i)) {
       // 判断是复杂数据类型还是简单数据类型
       if (typeof oldObj[i] === "object") {
         // 判断是数组还是对象
@@ -26,6 +26,7 @@ const deepCopy = (newObj, oldObj) => {
   return newObj
 }
 
-module.exports = {
+export default {
   isEmptyObj,
+  deepCopy,
 }

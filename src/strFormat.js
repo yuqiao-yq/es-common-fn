@@ -12,7 +12,7 @@ const capitalizeEveryWord = (str) => str.replace(/\b[a-z]/g, (char) => char.toUp
 // 删除字符串中的 HTMl 标签
 const stripHTMLTags = (str) => str.replace(/<[^>]*>/g, '');
 
-module.exports = {
+export default {
   hump2Line,
   capitalize,
   capitalizeEveryWord,

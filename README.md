@@ -106,7 +106,7 @@ esCommonFn.hasChildrenEle(elem)
 
 ### 带参数跳转到对应页面并打开新窗口
 ```javascript
-esCommonFn.openNewWindow(routerName, query)
+esCommonFn.openNewWindow(Router, routerName, query)
 ```
 
 ## 函数相关

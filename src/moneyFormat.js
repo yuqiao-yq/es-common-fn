@@ -3,6 +3,6 @@ const moneyThousands = (str) => {
     return str.replace(/(\d)(?=(?:\d{3})+$)/g, "$1,")
 }
 
-module.exports = {
+export default {
   moneyThousands,
 }

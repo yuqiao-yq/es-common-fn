@@ -15,7 +15,7 @@ function debounce(fn, delay) {
 // 节流
 function throttle(fn, delay) {
   let lastTime = 0
-  return function (e) {
+  return function () {
     let nowTime = new Date().getTime()
     if (nowTime - lastTime > delay) {
       fn.apply(this, arguments)
@@ -24,7 +24,7 @@ function throttle(fn, delay) {
   }
 }
 
-module.exports = {
+export default {
   debounce,
   throttle,
 }

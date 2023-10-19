@@ -29,7 +29,7 @@ const speCharRep = (str, rep='') => {
   return str.replace(/[^\w\u4E00-\u9FA5]/g, rep)
 }
 
-module.exports = {
+export default {
   isDecimal,
   isChineseText,
   isPhoneNum,

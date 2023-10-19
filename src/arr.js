@@ -1,5 +1,5 @@
 // 二维数组去重
-const DeduplicateArr2 = (arr) => {
+export const DeduplicateArr2 = (arr) => {
   let hash = {}
   let res = []
   for (let i = 0; i < arr.length; i++) {
@@ -12,7 +12,7 @@ const DeduplicateArr2 = (arr) => {
 }
 
 // 根据数组某个属性去重
-const uniqueBy = (arr, prop) => {
+export const uniqueBy = (arr, prop) => {
   const res = new Map()
   return arr.filter(
     (item) => !res.has(item[prop]) && res.set(item[prop], 1)
@@ -25,7 +25,7 @@ const uniqueBy = (arr, prop) => {
  * @param {[]} list 需要全排列的数组
  * @param {number} k 当前递归的数组的第一个元素下标
  */
-const getFullPerm = (list, k=0) => {
+export const getFullPerm = (list, k=0) => {
   let res = [];
   let m = list.length-1;
   const fullPerm = (list, k, m) => {
@@ -48,8 +48,8 @@ const getFullPerm = (list, k=0) => {
   return res;
 };
 
-module.exports = {
+export default {
   DeduplicateArr2,
   uniqueBy,
   getFullPerm,
-}
+} 
