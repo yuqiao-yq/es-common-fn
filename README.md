@@ -32,6 +32,10 @@ const res = esCommonFn.stripHTMLTags('<p><em>Hello</em> <strong>World</strong></
 ```javascript
 const res = esCommonFn.hump2Line('strExample')
 ```
+### 下划线转驼峰
+```javascript
+const res = esCommonFn.line2Hump('str_example')
+```
 
 ### 格式化金钱
 ```javascript
