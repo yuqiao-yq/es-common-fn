@@ -2,6 +2,12 @@
 const hump2Line = (str) => {
   return str.replace(/([A-Z])/g, "_$1").toLowerCase()
 }
+// 下划线转驼峰
+const Line2Hump = (str) => {
+  return str.replace(/_(\w)/g, (_, l) => {
+    return l.toUpperCase()
+  })
+}
 
 // 首字母大写
 const capitalize = ([first, ...rest]) => first.toUpperCase() + rest.join("")
@@ -14,6 +20,7 @@ const stripHTMLTags = (str) => str.replace(/<[^>]*>/g, '');
 
 export default {
   hump2Line,
+  Line2Hump,
   capitalize,
   capitalizeEveryWord,
   stripHTMLTags,
