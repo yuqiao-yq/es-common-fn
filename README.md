@@ -44,6 +44,12 @@ const res = esCommonFn.moneyThousands("1234567")
 // res='1,234,567'
 ```
 
+### 文件大小的单位转换
+```javascript
+const res = esCommonFn.convertFileSize(1, 'MB', 'KB', 2)
+// res = 1024.00 KB
+```
+
 ## 数组相关
 
 ### 二维数组去重
