@@ -51,6 +51,24 @@ const convertFileSize = (size, fromUnit, toUnit, decimalPoint = 2) => {
   return parseFloat(resultSize.toFixed(decimalPoint)) + " " + toUnit
 }
 
+
+// RGB 转 Hex
+function rgb2Hex(r, g, b) {
+  return (
+    "#" +
+    ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1).toUpperCase()
+  )
+}
+
+// Hex 转 RGB
+function hex2Rgb(hex) {
+  const bigint = parseInt(hex.slice(1), 16)
+  const r = (bigint >> 16) & 255
+  const g = (bigint >> 8) & 255
+  const b = bigint & 255
+  return [r, g, b]
+}
+
 export default {
   hump2Line,
   line2Hump,
@@ -58,4 +76,6 @@ export default {
   capitalizeEveryWord,
   stripHTMLTags,
   convertFileSize,
+  rgb2Hex,
+  hex2Rgb,
 }

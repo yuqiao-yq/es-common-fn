@@ -50,6 +50,16 @@ const res = esCommonFn.convertFileSize(1, 'MB', 'KB', 2)
 // res = 1024.00 KB
 ```
 
+### RGB 转 Hex
+```javascript
+const res = esCommonFn.rgb2Hex(255, 255, 255) // '#ffffff'
+```
+
+### Hex 转 RGB
+```javascript
+const res = esCommonFn.hex2Rgb(#ffffff) // '#ffffff'
+```
+
 ## 数组相关
 
 ### 二维数组去重
@@ -131,6 +141,24 @@ esCommonFn.debounce(fn, delay)
 esCommonFn.throttle(fn, delay)
 ```
 
+### 复制文本到粘贴板
+```javascript
+esCommonFn.copyToClipboard('this is a test')
+```
+
+### 生成随机字符串(英文字母大小写+数字)
+```javascript
+const res = esCommonFn.generateRandomString(8)
+```
+### 生成随机颜色(16进制)
+```javascript
+const res = esCommonFn.getRandomColor()
+```
+
+### UUID 生成 - 版本号 4
+```javascript
+const res = esCommonFn.generateUUID()
+```
 ## 正则表达式
 
 ### 是否带有小数
