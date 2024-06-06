@@ -9,6 +9,15 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuqiao-yq/es-common-fn"
+  },
+  "bugs": {
+    "url": "https://github.com/yuqiao-yq/es-common-fn/issues",
+    "email": "yuqiaoxixi@gmail.com"
+  },
+  "homepage": "https://github.com/yuqiao-yq/es-common-fn/blob/main/README.md",
   "devDependencies": {
     "eslint": "^8.51.0"
   }
